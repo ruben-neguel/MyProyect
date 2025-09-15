@@ -1,0 +1,29 @@
+{
+  "name": "myproyect",
+  "version": "1.0.0",
+  "main": "public/assets/js/variables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./input/input.css -o ./public/assets/css/output.css --watch"
+  },
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "vite": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruben-neguel/MyProyect.git"
+  },
+  "author": "ruben-neguel",
+  "bugs": {
+    "url": "https://github.com/ruben-neguel/MyProyect/issues"
+  },
+  "homepage": "https://github.com/ruben-neguel/MyProyect#readme"
+}

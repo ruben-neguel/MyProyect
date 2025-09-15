@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo del Bosque</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="public/assets/css/output.css">
+  <link rel="icon" href="public/assets/img/Logo turismo del bosque.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    /* Animación tarjetitas */
+    .card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none; 
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;  
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-semibold">
+
+  <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#inicio" class="flex items-center gap-2 text-xl font-bold">
+        <img src="public/assets/img/Logo turismo del bosque.png" class="w-12 h-12 rounded-full" alt="Logo Turismo del Bosque">
+        Turismo del Bosque
+      </a>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#inicio" class="hover:text-yellow-400 transition-colors">Inicio</a>
+        <a href="Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a>
+        <a href="#donde-visitar" class="hover:text-yellow-400 transition-colors">Qué Visitar</a>
+        <a href="#alojamientos" class="hover:text-yellow-400 transition-colors">Alojamiento</a>
+        <a href="#opiniones" class="hover:text-yellow-400 transition-colors">Opiniones</a>
+        <a href="#Contacto" class="hover:text-yellow-400 transition-colors">Contacto</a>
+      </nav>
+      <div class="md:hidden cursor-pointer" id="menu-btn">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 bg-green-800 px-6 py-4">
+      <a href="#inicio" class="hover:text-yellow-400 block py-2">Inicio</a>
+      <a href="#donde-visitar" class="hover:text-yellow-400 block py-2">Qué Visitar</a>
+      <a href="#alojamientos" class="hover:text-yellow-400 block py-2">Alojamiento</a>
+      <a href="#opiniones" class="hover:text-yellow-400 block py-2">Opiniones</a>
+      <a href="#eco" class="hover:text-yellow-400 block py-2">Consejos</a>
+      <a href="Nosotros.html" class="hover:text-yellow-400 block py-2">Nosotros</a>
+      <a href="#Contacto" class="hover:text-yellow-400 block py-2">Contacto</a>
+    </div>
+  </header>
+
+  <style>
+  /* Animación para que el texto de la portada aparezca suavemente */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  /* Efecto de zoom lento para la imagen de fondo (Ken Burns) */
+  .ken-burns {
+    animation: kenburns 15s ease-out forwards;
+  }
+  @keyframes kenburns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+</style>
+
+
+<main class="pt-20"> 
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="public/assets/img/Playa-Cole-Cole.jpg" 
+             alt="Impresionante vista de la Playa Cole Cole en Chiloé al atardecer" 
+             class="absolute inset-0 w-full h-full object-cover ken-burns"> 
+             </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+    <div class="relative z-10 text-center text-white px-5 animate-fade-in-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white" style="font-family: 'Lora', serif;">
+        La Magia te Espera
+      </h1>
+      <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto text-shadow">
+        Descubre la naturaleza virgen y los mitos de Chiloé. Tu aventura en el corazón del sur de Chile comienza aquí.
+      </p>
+      <a href="#donde-visitar" class="bg-yellow-400 text-green-900 px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+        Comienza a Explorar
+      </a>
+      </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <a href="#info" aria-label="Ir a la siguiente sección">
+        <svg class="w-8 h-8 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+ <!--INFOOOO-->
+    <section id="info" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <div class="rounded-2xl overflow-hidden shadow-xl aspect-w-4 aspect-h-3">
+      <img src="public/assets/img/Domo 1 (6-7 personas).jpg" 
+           alt="Interior acogedor de un domo en Turismo del Bosque" 
+           class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+    </div>
+
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">Un Refugio Creado con Cariño</h2>
+      <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+        Somos los guardianes de este rincón mágico en Chiloé. Más que un alojamiento, <strong>Turismo del Bosque</strong> es nuestro sueño de compartir la increíble paz y belleza de la naturaleza sureña. Cada cabaña y domo está pensado para que te desconectes de verdad y te reencuentres con lo esencial.
+      </p>
+      <div class="flex items-center gap-4">
+        <a href="#alojamientos" class="bg-green-800 text-white px-6 py-3 rounded-lg hover:bg-green-700 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+          Ver Alojamientos
+        </a>
+        <a href="Nosotros.html" class="font-semibold text-green-900 hover:text-green-700 transition">
+          Nuestra Historia →
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+    <section id="mapa" class="py-16 bg-green-50 text-center">
+      <h2 class="text-3xl font-bold text-green-900 mb-6">Nuestra Ubicación en Chiloé</h2>
+      <p class="mb-8">Descubre cómo llegar a nuestras cabañas y domos en Castro.</p>
+      <div class="w-full h-[400px] md:h-[500px] mb-6 shadow-lg rounded-lg overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.123456789!2d-73.794081!3d-42.509656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96221852cd87644f%3A0xfe1e781e1e8b7fe9!2sTurismo%20Del%20Bosque%20Caba%C3%B1as%20Y%20Domos!5e0!3m2!1ses!2scl!4v1694067890123!5m2!1ses!2scl" 
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <a href="https://maps.app.goo.gl/hG5o6oBq2zTjKkH48" target="_blank" class="bg-green-900 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition inline-block">
+        Abrir en Google Maps
+      </a>
+    </section>
+
+    <section id="donde-visitar" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl ginebra text-gray-800">Explora los Tesoros de Chiloé</h2>
+          <p class="text-lg text-gray-500 mt-2">Descubre senderos mágicos, muelles de leyenda y cascadas escondidas.</p>
+        </div>
+
+        <div class="relative group">
+          <div id="placesCarousel-container" class="overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
+            <div class="flex space-x-6 p-1">
+              <div class="snap-start flex-shrink-0 w-80 h-96 relative rounded-2xl shadow-lg overflow-hidden group/card card">
+                <img src="public/assets/img/Cole Cole.jpg" alt="Sendero Cole-Cole" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+                  <h3 class="text-2xl font-bold">Sendero Cole-Cole</h3>
+                  <p class="text-sm opacity-90 mt-1">Una caminata inolvidable hacia una de las playas más vírgenes.</p>
+                  <a href="public/assets/cole-cole.html" class="font-semibold text-yellow-400 hover:text-yellow-300 mt-4 self-start">Ver más →</a>
+                </div>
+              </div>
+              <div class="snap-start flex-shrink-0 w-80 h-96 relative rounded-2xl shadow-lg overflow-hidden group/card card">
+                <img src="public/assets/img/Muelle de las almas.jpg" alt="Muelle de las Almas" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+                  <h3 class="text-2xl font-bold">Muelle de las Almas</h3>
+                  <p class="text-sm opacity-90 mt-1">Un lugar mágico donde la mitología chilota se encuentra con el océano.</p>
+                  <a href="public/assets/muelle-almas.html" class="font-semibold text-yellow-400 hover:text-yellow-300 mt-4 self-start">Ver más →</a>
+                </div>
+              </div>
+              <div class="snap-start flex-shrink-0 w-80 h-96 relative rounded-2xl shadow-lg overflow-hidden group/card card">
+                <img src="public/assets/img/Cascada de Tocoihue.jpg" alt="Cascada de Tocoihue" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+                  <h3 class="text-2xl font-bold">Cascada de Tocoihue</h3>
+                  <p class="text-sm opacity-90 mt-1">Impresionante salto de agua de más de 40 metros de altura.</p>
+                  <a href="public/assets/cascada.html" class="font-semibold text-yellow-400 hover:text-yellow-300 mt-4 self-start">Ver más →</a>
+                </div>
+              </div>
+              <div class="snap-start flex-shrink-0 w-80 h-96 relative rounded-2xl shadow-lg overflow-hidden group/card card">
+                <img src="public/assets/img/Sendero el tepueal.jpg" alt="Sendero El Tepual" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+                  <h3 class="text-2xl font-bold">Sendero El Tepual</h3>
+                  <p class="text-sm opacity-90 mt-1">Sumérgete en un bosque encantado de tepúes.</p>
+                  <a href="public/assets/tepual.html" class="font-semibold text-yellow-400 hover:text-yellow-300 mt-4 self-start">Ver más →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="places-btn-prev" aria-label="Anterior" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-gray-800"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+          </button>
+          <button id="places-btn-next" aria-label="Siguiente" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-gray-800"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="alojamientos" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nuestros Alojamientos</h2>
+                <p class="text-lg text-gray-500 mt-2">Cabañas y domos equipados para una estadía inolvidable.</p>
+            </div>
+    
+            <div class="relative group">
+                <div id="alojamiento-container" class="overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
+                    <div class="flex space-x-6 p-1">
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <div class="relative">
+                                    <span class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">Con Hot Tub</span>
+                                    <img src="public/assets/img/Cabaña 3 Hot Tub (7 personas).jpg" alt="Cabaña 3 con Hot Tub" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                                </div>
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Cabaña 1</h3>
+                                    <div class="flex items-center text-gray-500 mt-2 space-x-4">
+                                        <div class="flex items-center space-x-1"><i class="fas fa-users text-sm"></i><span class="text-sm">Hasta 7</span></div>
+                                        <div class="flex items-center space-x-1"><i class="fas fa-hot-tub-person text-sm"></i><span class="text-sm">Hot Tub</span></div>
+                                    </div>
+                                    <a href="public/assets/DetalleCab1.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <img src="public/assets/img/Cabaña de 2 (6 personas).jpg" alt="Cabaña 2" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Cabaña 2</h3>
+                                    <div class="flex items-center text-gray-500 mt-2"><i class="fas fa-users text-sm"></i><span class="text-sm ml-1">Hasta 6</span></div>
+                                    <a href="public/assets/DetallesCab2.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <img src="public/assets/img/Cabaña 1 (6 personas).jpg" alt="Cabaña 1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Cabaña 3</h3>
+                                    <div class="flex items-center text-gray-500 mt-2"><i class="fas fa-users text-sm"></i><span class="text-sm ml-1">Hasta 6</span></div>
+                                    <a href="public/assets/DetalleCab3.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <div class="relative"><span class="absolute top-3 right-3 bg-teal-500 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">Domo</span>
+                                <img src="public/assets/img/Domo 1 (6-7 personas).jpg" alt="Domo 1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"></div>
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Domo 1</h3>
+                                    <div class="flex items-center text-gray-500 mt-2"><i class="fas fa-users text-sm"></i><span class="text-sm ml-1">Hasta 7</span></div>
+                                    <a href="public/assets/DetalleDom1.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <div class="relative"><span class="absolute top-3 right-3 bg-teal-500 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">Domo</span>
+                                <img src="public/assets/img/Domo 2 (6 personas).jpeg" alt="Domo 2" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"></div>
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Domo 2</h3>
+                                    <div class="flex items-center text-gray-500 mt-2"><i class="fas fa-users text-sm"></i><span class="text-sm ml-1">Hasta 6</span></div>
+                                    <a href="public/assets/DetalleDom2.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <div class="relative"><span class="absolute top-3 right-3 bg-teal-500 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">Domo</span>
+                                <img src="public/assets/img/Domo 3 (4 personas).jpeg" alt="Domo 3" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"></div>
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Domo 3</h3>
+                                    <div class="flex items-center text-gray-500 mt-2"><i class="fas fa-users text-sm"></i><span class="text-sm ml-1">Hasta 4</span></div>
+                                    <a href="public/assets/DetalleDom3.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snap-start flex-shrink-0 w-[90%] md:w-1/3">
+                            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col h-full group card">
+                                <div class="relative"><span class="absolute top-3 right-3 bg-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">Para Parejas</span>
+                                <img src="public/assets/img/Cabaña Avellano (2 personas).jpg" alt="Cabaña Avellano" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"></div>
+                                <div class="p-5 flex flex-col flex-grow">
+                                    <h3 class="font-bold text-xl text-gray-800">Cabaña Avellano</h3>
+                                    <div class="flex items-center text-gray-500 mt-2"><i class="fas fa-users text-sm"></i><span class="text-sm ml-1">Hasta 2</span></div>
+                                    <a href="public/assets/DetalleAvell.html" class="mt-auto pt-4 w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="aloj-btn-prev" aria-label="Anterior" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white text-gray-800 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+                </button>
+                <button id="aloj-btn-next" aria-label="Siguiente" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white text-gray-800 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // --- LÓGICA PARA EL MENÚ MÓVIL ---
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // --- FUNCIÓN GENÉRICA PARA CAROUSELES CON BOTONES (ESCRITORIO) ---
+      function setupCarouselControls(containerId, prevBtnId, nextBtnId) {
+        const container = document.getElementById(containerId);
+        const prevBtn = document.getElementById(prevBtnId);
+        const nextBtn = document.getElementById(nextBtnId);
+
+        if (!container || !prevBtn || !nextBtn) return;
+
+        const moveCarousel = (direction) => {
+          const card = container.querySelector(':scope > div > div');
+          if (card) {
+            const cardWidth = card.offsetWidth;
+            const gap = 24; // Corresponde a 'space-x-6' (1.5rem = 24px)
+            container.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+          }
+        };
+
+        prevBtn.addEventListener('click', () => moveCarousel(-1));
+        nextBtn.addEventListener('click', () => moveCarousel(1));
+      }
+
+      setupCarouselControls('placesCarousel-container', 'places-btn-prev', 'places-btn-next');
+      setupCarouselControls('alojamiento-container', 'aloj-btn-prev', 'aloj-btn-next');
+      
+    
+      
+    });
+  </script>
+      
+<!-- Opiniones -->
+
+<section id="opiniones" class="py-16 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 text-center">Qué dicen nuestros visitantes</h2>
+    
+    <div class="flex items-center justify-center mt-4 mb-12 space-x-2">
+      <p class="text-xl font-bold text-gray-700">4.9</p>
+      <div class="flex text-yellow-400">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p class="text-gray-500">(Basado en 108 opiniones)</p>
+    </div>
+
+    <div id="carouselContainer" class="relative overflow-hidden rounded-2xl">
+      <div id="carouselOpiniones" class="flex transition-transform duration-700 ease-in-out">
+        
+        <div class="min-w-full p-1">
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center">
+                <img src="https://ui-avatars.com/api/?name=Diana+Claro&background=e0f2fe&color=0ea5e9" alt="Avatar de Diana Claro" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <p class="font-semibold text-gray-800">Diana Claro</p>
+                  <p class="text-sm text-gray-500">Hace 2 semanas</p>
+                </div>
+              </div>
+               <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo de Google" class="w-6 h-6 opacity-75">
+            </div>
+            <div class="flex items-center mb-3 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-600 leading-relaxed">"Tuvimos una linda estadía de dos noches en una de las cabañas. Solo mencionar que el camino es un poco empinado y rústico para que lo tengan en consideración. Vale la pena llegar arriba por la vista.
+Es un buen sitio para ir en familia y desconectar."</p>
+          </div>
+        </div>
+
+        <div class="min-w-full p-1">
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center">
+                <img src="https://ui-avatars.com/api/?name=Roxana+Concha&background=fef3c7&color=f59e0b" alt="Avatar de Roxana Concha" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <p class="font-semibold text-gray-800">Roxana Concha</p>
+                  <p class="text-sm text-gray-500">Hace 6 mes</p>
+                </div>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo de Google" class="w-6 h-6 opacity-75">
+            </div>
+            <div class="flex items-center mb-3 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> 
+            </div>
+            <p class="text-gray-600 leading-relaxed">"Hermoso lugar....buena ubicación. Excelente vista y las cabañas son muy cómodas y están muy bien equipadas."</p>
+          </div>
+        </div>
+
+        <div class="min-w-full p-1">
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center">
+                <img src="https://ui-avatars.com/api/?name=Felipe+Moya&background=dcfce7&color=22c55e" alt="Avatar de Felipe Moya" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                  <p class="font-semibold text-gray-800">Felipe Moya</p>
+                  <p class="text-sm text-gray-500">Hace 3 semanas</p>
+                </div>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Logo de Google" class="w-6 h-6 opacity-75">
+            </div>
+            <div class="flex items-center mb-3 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-600 leading-relaxed">"Hermoso lugar, perfecto para desconectarse y disfrutar de una hermosa vista, la dueña muy atenta, estuvimos durante un corte de luz y nos asistió con generador para tener energía eléctrica y una lamparita❤️"</p>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="moverOpiniones(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-white transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-700">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <button onclick="moverOpiniones(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-white transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-700">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const carouselContainer = document.getElementById("carouselContainer");
+  const carousel = document.getElementById("carouselOpiniones");
+  let currentIndex = 0;
+  let autoSlideInterval;
+
+  function moverOpiniones(direction) {
+    const totalSlides = carousel.children.length;
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      moverOpiniones(1);
+    }, 5000); // Cambia de opinión cada 5 segundos
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Iniciar el carrusel automático
+  startAutoSlide();
+
+  // Pausar cuando el mouse está sobre el carrusel
+  carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+  carouselContainer.addEventListener('mouseleave', startAutoSlide);
+</script>
+
+<!-- Consejos eco-amigables para tu estadía -->
+
+  <section id="eco" class="py-16 bg-green-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-green-900 mb-12 text-center">Consejos eco-amigables para tu estadía</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-red-500">
+        <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mb-4 mx-auto">
+          <i class="fa-solid fa-fire text-red-500 text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-green-900 mb-3 text-center">No uses fuego</h3>
+        <p class="text-gray-700 text-center">El peligro para la vida propia del parque es invaluable, por eso es esencial respetar la prohibición del uso del fuego.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-blue-500">
+        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4 mx-auto">
+          <i class="fa-solid fa-dog text-blue-500 text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-green-900 mb-3 text-center">No lleves tu mascota</h3>
+        <p class="text-gray-700 text-center">No se permite la presencia de mascotas en estas áreas que preservan una rica biodiversidad propia de la zona.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-yellow-500">
+        <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mb-4 mx-auto">
+          <i class="fa-solid fa-trash text-yellow-500 text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-green-900 mb-3 text-center">Llévate la basura</h3>
+        <p class="text-gray-700 text-center">Lo mejor para cuidar la belleza y vida del parque en su forma original, es que lleves la basura contigo. No dejemos rastro de nuestra visita.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-teal-500">
+        <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mb-4 mx-auto">
+          <i class="fa-solid fa-shoe-prints text-teal-500 text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold text-green-900 mb-3 text-center">Respeta los senderos</h3>
+        <p class="text-gray-700 text-center">Caminar fuera de las rutas habilitadas puede dañar la vegetación frágil y perturbar el hábitat de la fauna local.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Información / Contacto -->
+<section id="info" class="py-20 bg-green-100">
+  <div class="max-w-5xl mx-auto px-5">
+    <!-- Logo y descripción -->
+    <div class="text-center mb-10">
+      <img src="public/assets/img/Logo turismo del bosque.png" 
+           alt="Logo Parque Nacional Chiloé" 
+           class="mx-auto mb-6 w-28 h-28 object-contain">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">Parque Nacional Chiloé</h2>
+      <p class="text-gray-700 max-w-2xl mx-auto">
+        Tu mejor guía para explorar y visitar el Parque Nacional Chiloé. 
+        Descubre senderos, miradores, lagos, atractivos y actividades únicas. 
+        Planifica tu visita haciendo de cada momento una experiencia inolvidable.
+      </p>
+    </div>
+
+    <!-- Links de navegación rápida -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <a href="#accesos" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition">Accesos y Tarifas</a>
+      <a href="#accesos" class="bg-yellow-400 text-green-900 px-4 py-2 rounded hover:bg-yellow-300 transition">Compra tu Ticket</a>
+      <a href="#mapa" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition">Mapa</a>
+      <a href="#visitar" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition">Qué Visitar</a>
+      <a href="#dormir" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition">Dónde Dormir</a>
+      <a href="#info" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700 transition">Información General</a>
+    </div>
+
+    <!-- Formulario -->
+    <div class="bg-white shadow-lg rounded-xl p-8 max-w-3xl mx-auto border border-green-200">
+      <form class="flex flex-col gap-6">
+        <div>
+          <label class="block text-left font-semibold text-green-900 mb-2">Nombre</label>
+          <input type="text" placeholder="Ejemplo: Juan Pérez" class="w-full px-4 py-2 rounded border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+        </div>
+        <div>
+          <label class="block text-left font-semibold text-green-900 mb-2">Correo Electrónico</label>
+          <input type="email" placeholder="Ejemplo: juan@mail.com" class="w-full px-4 py-2 rounded border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+        </div>
+        <div>
+          <label class="block text-left font-semibold text-green-900 mb-2">Mensaje | Escríbenos tu duda o consulta</label>
+          <textarea placeholder="Añade tu comentario aquí" rows="5" class="w-full px-4 py-2 rounded border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+        </div>
+        <button class="bg-green-900 text-white py-3 rounded font-semibold hover:bg-green-800 transition">
+          Comunicarme Ahora
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-green-900 text-gray-200 pt-12 pb-8 mt-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!--  Descripcion -->
+    <div>
+      <img src="public/assets/img/Logo turismo del bosque.png" alt="Turismo del Bosque" class="w-20 mb-4">
+      <h3 class="text-lg font-bold text-white">Turismo del Bosque</h3>
+      <p class="text-sm text-gray-300 mt-2">
+        Tu mejor guía para explorar los parques y senderos de Chiloé.  
+        Conecta con la naturaleza y vive experiencias únicas.
+      </p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div>
+      <h3 class="text-lg font-bold text-white mb-4">Enlaces Rápidos</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#inicio" class="hover:text-yellow-400">Inicio</a></li>
+        <li><a href="#accesos" class="hover:text-yellow-400">Accesos y Tarifas</a></li>
+        <li><a href="#mapa" class="hover:text-yellow-400">Mapa</a></li>
+        <li><a href="#donde-visitar" class="hover:text-yellow-400">Qué Visitar</a></li>
+        <li><a href="#dormir" class="hover:text-yellow-400">Dónde Dormir</a></li>
+        <li><a href="#info" class="hover:text-yellow-400">Información</a></li>
+      </ul>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div>
+      <h3 class="text-lg font-bold text-white mb-4">Síguenos</h3>
+      <p class="text-sm text-gray-300 mb-4">Mantente al día con las últimas noticias y actividades.</p>
+      <div class="flex gap-4 text-xl">
+        <a href="#" class="hover:text-yellow-400"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-yellow-400"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-yellow-400"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linea final -->
+  <div class="border-t border-green-700 mt-8 pt-4 text-center text-sm text-gray-400">
+    &copy; 2025 Turismo del Bosque. Todos los derechos reservados.
+  </div>
+</footer>
+
+
+  <!-- MENU RESPONSIVE JS -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
