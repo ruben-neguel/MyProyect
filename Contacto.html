@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Turismo del Bosque</title>
+    <meta name="description" content="Contáctanos para resolver tus dudas o realizar una reserva. Estamos aquí para ayudarte a planificar tu viaje a Chiloé.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/assets/css/output.css">
+    <link rel="icon" href="public/assets/img/TDB.LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <style>
+        .nav-active { color: #facc15; } /* enlace activo */
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-semibold">
+
+   </head>
+<body class="bg-gray-50 text-gray-800 font-semibold">
+
+    <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+        <a href="index.html" class="flex items-center gap-3 text-xl font-bold">
+            <img src="public/assets/img/TDB.LOGO.png" class="h-12 rounded-full" alt="Logo">
+            <span>Turismo del Bosque</span>
+        </a>
+        <nav id="main-nav" class="hidden md:flex items-center gap-6 font-medium text-lg">
+            <a href="index.html" class="py-2 hover:text-yellow-400">Inicio</a>
+            <a href="Nosotros.html" class="py-2 hover:text-yellow-400">Nosotros</a>
+            <a href="guias.html" class="py-2 hover:text-yellow-400">Guías</a>
+            <a href="alojamientos.html" class="py-2 hover:text-yellow-400">Alojamiento</a>
+            <a href="contacto.html" class="py-2 hover:text-yellow-400">Contacto</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-2xl" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-green-800">
+        <nav class="flex flex-col px-6 py-4">
+            <a href="index.html" class="py-2 text-lg hover:text-yellow-400">Inicio</a>
+            <a href="Nosotros.html" class="py-2 text-lg hover:text-yellow-400">Nosotros</a>
+            <a href="guias.html" class="py-2 text-lg hover:text-yellow-400">Guías</a>
+            <a href="alojamientos.html" class="py-2 text-lg hover:text-yellow-400">Alojamiento</a>
+            <a href="contacto.html" class="py-2 text-lg hover:text-yellow-400">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+    <!--Contactoo-->
+
+    <main class="pt-20">
+        <section id="contacto" class="py-20 bg-green-50">
+            <div class="max-w-6xl mx-auto px-6">
+        
+                <div class="text-center mb-16">
+                    <img src="public/assets/img/LogoTDB.png" alt="Logo de Turismo del Bosque" class="mx-auto mb-6 w-28 h-28 rounded-full shadow-md">
+                    <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-4">Ponte en Contacto</h2>
+                    <p class="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+                        ¿Listo para tu aventura en Chiloé? Si tienes cualquier duda, consulta o quieres reservar, estamos aquí para ayudarte. Rellena el formulario o contáctanos directamente.
+                    </p>
+                </div>
+        
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 mb-16 text-center">
+                    <div class="flex items-center gap-3 text-green-800">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <a href="https://wa.me/56974981352" target="_blank" class="font-semibold hover:text-green-600">+56 9 7498 1352</a>
+                    </div>
+                    <div class="flex items-center gap-3 text-green-800">
+                        <i class="fa-solid fa-phone text-xl"></i>
+                        <a href="tel:+56974413361" class="font-semibold hover:text-green-600">+56 9 7441 3361</a>
+                    </div>
+                    <div class="flex items-center gap-3 text-green-800">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        <a href="mailto:reservas.tdb@gmail.com" class="font-semibold hover:text-green-600">reservas.tdb@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-3 text-green-800">
+                        <i class="fa-solid fa-map-location-dot text-xl"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Panamericana+Sur+1,+Castro,+Chiloé" target="_blank" class="font-semibold hover:text-green-600">Panamericana Sur 1, Castro</a>
+                    </div>
+                </div>
+        
+                <div class="bg-white shadow-xl rounded-2xl p-8 md:p-12 max-w-3xl mx-auto border border-gray-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-green-900">¿Tienes alguna duda?</h3>
+                        <p class="text-gray-600 mt-2">Envíanos un mensaje y te responderemos a la brevedad.</p>
+                    </div>
+                    
+                    <form action="#" method="POST" class="flex flex-col gap-6">
+                        <div>
+                            <label for="nombre" class="block font-semibold text-green-900 mb-2">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ruben Neguel" required autocomplete="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block font-semibold text-green-900 mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Ej: rubesin777@correo.com" required autocomplete="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block font-semibold text-green-900 mb-2">Tu consulta o mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu duda..." rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-900 text-white py-3 px-6 rounded-lg font-bold text-lg hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 w-full md:w-auto md:self-center">
+                            Enviar Consulta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Mapa-->
+
+    <section id="mapa" class="py-16 bg-green-50 text-center">
+      <h2 class="text-3xl font-bold text-green-900 mb-6">Nuestra Ubicación en Chiloé</h2>
+      <p class="mb-8">Descubre cómo llegar a nuestras cabañas y domos en Castro.</p>
+      <div class="w-full h-[400px] md:h-[500px] mb-6 shadow-lg rounded-lg overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.123456789!2d-73.794081!3d-42.509656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96221852cd87644f%3A0xfe1e781e1e8b7fe9!2sTurismo%20Del%20Bosque%20Caba%C3%B1as%20Y%20Domos!5e0!3m2!1ses!2scl!4v1694067890123!5m2!1ses!2scl" 
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <a href="https://maps.app.goo.gl/hG5o6oBq2zTjKkH48" target="_blank" class="bg-green-900 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition inline-block">
+        Abrir en Google Maps
+      </a>
+    </section>
+    
+   <!--Footeer-->
+<footer class="bg-green-900 text-gray-300 border-t border-green-800">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <div class="sm:col-span-2 lg:col-span-1">
+                <a href="index.html" class="flex items-center gap-3 mb-4 group">
+                    <img src="public/assets/img/LogoTDB.png" alt="Logo Turismo del Bosque" class="w-14 h-14 rounded-full group-hover:opacity-90 transition-opacity">
+                    <span class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">Turismo del Bosque</span>
+                </a>
+                <p class="text-sm leading-relaxed text-gray-400 font-normal">
+                    Tu refugio en el corazón de Chiloé. Conecta con la naturaleza y vive experiencias inolvidables.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Navegación</h3>
+                <ul class="space-y-3 text-sm font-normal">
+                    <li><a href="index.html" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
+                    <li><a href="Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
+                    <li><a href="guias.html" class="hover:text-yellow-400 transition-colors">Guías</a></li>
+                    <li><a href="alojamientos.html" class="hover:text-yellow-400 transition-colors">Alojamiento</a></li>
+                    <li><a href="contacto.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Contacto</h3>
+                <ul class="space-y-3 text-sm font-normal">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope text-yellow-400 w-4 pt-1"></i>
+                        <a href="mailto:reservas.tdb@gmail.com" class="hover:text-yellow-400 transition-colors">reservas.tdb@gmail.com</a>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-brands fa-whatsapp text-yellow-400 w-4 pt-1"></i>
+                        <a href="https://wa.me/56974981352" class="hover:text-yellow-400 transition-colors">+56 9 7498 1352</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Síguenos</h3>
+                <div class="flex gap-5 text-2xl">
+                    <a href="#" aria-label="Síguenos en Facebook" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en YouTube" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-950">
+        <div class="max-w-7xl mx-auto px-6 py-4 text-center">
+            <p class="text-sm text-gray-400 font-normal">
+                &copy; 2025 Turismo del Bosque. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+    </a>
+    <script>
+        // --- SCRIPT DEL MENÚ MÓVIL ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        }
+
+        // --- Marcar enlace de navegación activo ---
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('#main-nav a').forEach(link => {
+                if (link.href.endsWith('contacto.html')) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
