@@ -20,6 +20,8 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-semibold">
+  
+    <!-- Header-->
 
     <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
@@ -104,31 +106,34 @@
                     </div>
                 </div>
             </div>
-                       <div class="mt-20 border-t pt-12">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Recomendaciones Prácticas</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <i class="fas fa-camera-retro text-3xl text-purple-500 mb-4"></i>
-            <h3 class="text-xl font-semibold text-gray-800">Mejor Momento para Fotos</h3>
-            <p class="text-gray-600 mt-2 font-normal">La luz es ideal por la mañana. Después de días de lluvia, la cascada lleva más agua y se ve aún más espectacular.</p>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <i class="fas fa-shoe-prints text-3xl text-gray-500 mb-4"></i>
-            <h3 class="text-xl font-semibold text-gray-800">Cuidado con las Rocas</h3>
-            <p class="text-gray-600 mt-2 font-normal">La zona cercana a la caída de agua es húmeda y las rocas pueden ser muy resbaladizas. Camina con precaución.</p>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <i class="fas fa-car text-3xl text-teal-500 mb-4"></i>
-            <h3 class="text-xl font-semibold text-gray-800">Acceso Fácil</h3>
-            <p class="text-gray-600 mt-2 font-normal">La caminata desde el estacionamiento es corta y apta para toda la familia, lo que la hace un panorama ideal para ir con niños.</p>
-        </div>
-        
-    </div>
-</div>
 
+    <!-- recomendaciones-->
+    <div class="mt-20 border-t pt-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Recomendaciones Prácticas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        
+           <div class="bg-white p-6 rounded-lg shadow-md">
+               <i class="fas fa-camera-retro text-3xl text-purple-500 mb-4"></i>
+               <h3 class="text-xl font-semibold text-gray-800">Mejor Momento para Fotos</h3>
+               <p class="text-gray-600 mt-2 font-normal">La luz es ideal por la mañana. Después de días de lluvia, la cascada lleva más agua y se ve aún más espectacular.</p>
+           </div>
+        
+            <div class="bg-white p-6 rounded-lg shadow-md">
+               <i class="fas fa-shoe-prints text-3xl text-gray-500 mb-4"></i>
+               <h3 class="text-xl font-semibold text-gray-800">Cuidado con las Rocas</h3>
+                <p class="text-gray-600 mt-2 font-normal">La zona cercana a la caída de agua es húmeda y las rocas pueden ser muy resbaladizas. Camina con precaución.</p>
+          </div>
+        
+          <div class="bg-white p-6 rounded-lg shadow-md">
+              <i class="fas fa-car text-3xl text-teal-500 mb-4"></i>
+              <h3 class="text-xl font-semibold text-gray-800">Acceso Fácil</h3>
+              <p class="text-gray-600 mt-2 font-normal">La caminata desde el estacionamiento es corta y apta para toda la familia, lo que la hace un panorama ideal para ir con niños.</p>
+          </div>
+        
+       </div>
+    </div>
+
+  <!-- relacionados-->
 <div class="mt-20 border-t pt-12">
     <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Cerca de Aquí</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -233,11 +238,30 @@
     </div>
 </footer>
 
+<!--WhatsApp-->
+<a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+</a>
+
+
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // --- Lógica del Menú Móvil ---
-            // (Pega aquí el script del menú que ya tienes)
+               // ---  Menu Movil ---
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = menuBtn.querySelector('i');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+                menuIcon.classList.toggle('fa-bars', isExpanded);
+                menuIcon.classList.toggle('fa-xmark', !isExpanded);
+            });
 
             // --- Lógica de la Galería de Imágenes ---
             const mainImage = document.getElementById('main-image');

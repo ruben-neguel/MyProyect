@@ -27,8 +27,10 @@
 
 </head>
 <body class="bg-gray-50 text-gray-800 font-semibold">
+ 
+  <!-- Header-->
 
-<header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
+ <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
         <a href="index.html" class="flex items-center gap-3 text-xl font-bold">
             <img src="public/assets/img/TDB.LOGO.png" class="h-12 rounded-full" alt="Logo">
@@ -52,31 +54,10 @@
             <a href="contacto.html" class="py-2 text-lg hover:text-yellow-400">Contacto</a>
         </nav>
     </div>
-</header>
-
-<!--Cerebelo del menu-->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = menuBtn.querySelector('i');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      
-      const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-      menuBtn.setAttribute('aria-expanded', !isExpanded);
- 
-      if (!isExpanded) {
-        menuIcon.classList.remove('fa-bars');
-        menuIcon.classList.add('fa-xmark');
-      } else {
-        menuIcon.classList.remove('fa-xmark');
-        menuIcon.classList.add('fa-bars');
-      }
-    });
-  </script>
-
+  </header>
 </body>
+
+<!--Portada-->
 
   <style>
   /* Animacion del texto de la portada  */
@@ -480,7 +461,10 @@
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
-            <p class="text-gray-600 leading-relaxed">"Tuvimos una linda estadía de dos noches en una de las cabañas..."</p>
+            <p class="text-gray-600 leading-relaxed">"Tuvimos una linda estadía de dos noches en una de las cabañas. Solo mencionar que el camino es un poco empinado y rústico para que lo tengan en consideración. Vale la pena llegar arriba por la vista.
+Es un buen sitio para ir en familia y desconectar. La cocina está equipada con todo y pueden hacer un asado.
+Además el wifi funciona muy bien
+Recomiendo."</p>
           </div>
         </div>
 
@@ -489,7 +473,7 @@
           <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center">
-                <img src="public/assets/img/Perfil-1.jpeg" alt="Avatar de Roxana Concha" class="w-12 h-12 rounded-full mr-4">
+                <img src="public/assets/img/Perfil-1.jpeg" alt="Avatar de Roxana Concha" class="w-6 h-6 rounded-full mr-4">
                 <div>
                   <p class="font-semibold text-gray-800">Roxana Concha</p>
                   <p class="text-sm text-gray-500">Hace 6 meses</p>
@@ -501,7 +485,7 @@
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
-            <p class="text-gray-600 leading-relaxed">"Hermoso lugar....buena ubicación. Excelente vista..."</p>
+            <p class="text-gray-600 leading-relaxed">"Hermoso lugar....buena ubicación. Excelente vista y las cabañas son muy cómodas y están muy bien equipadas."</p>
           </div>
         </div>
 
@@ -522,7 +506,7 @@
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               <i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
-            <p class="text-gray-600 leading-relaxed">"Hermoso lugar, perfecto para desconectarse y disfrutar..."</p>
+            <p class="text-gray-600 leading-relaxed">"Hermoso lugar, perfecto para desconectarse y disfrutar de una hermosa vista, la dueña muy atenta, estuvimos durante un corte de luz y nos asistió con generador para tener energía eléctrica y una lamparita❤️"</p>
           </div>
         </div>
 
@@ -569,7 +553,7 @@
     function startAutoSlide() {
       autoSlideInterval = setInterval(() => {
         moverOpiniones(1);
-      }, 5000); // Cambia de opinión cada 5 segundos
+      }, 5000); // 
     }
 
     function stopAutoSlide() {
@@ -630,65 +614,66 @@
    </section>
 
 <!--Footeer-->
-<footer class="bg-green-900 text-gray-300 border-t border-green-800">
-    <div class="max-w-7xl mx-auto px-6 py-16">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+  <footer class="bg-green-900 text-gray-300 border-t border-green-800">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-            <div class="sm:col-span-2 lg:col-span-1">
-                <a href="index.html" class="flex items-center gap-3 mb-4 group">
-                    <img src="public/assets/img/TDB.LOGO.png" alt="Logo Turismo del Bosque" class="w-14 h-14 rounded-full group-hover:opacity-90 transition-opacity">
-                    <span class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">Turismo del Bosque</span>
-                </a>
-                <p class="text-sm leading-relaxed text-gray-400 font-normal">
-                    Tu refugio en el corazón de Chiloé. Conecta con la naturaleza y vive experiencias inolvidables.
-                </p>
-            </div>
+              <div class="sm:col-span-2 lg:col-span-1">
+                  <a href="index.html" class="flex items-center gap-3 mb-4 group">
+                      <img src="public/assets/img/TDB.LOGO.png" alt="Logo Turismo del Bosque" class="w-14 h-14 rounded-full group-hover:opacity-90 transition-opacity">
+                      <span class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">Turismo del Bosque</span>
+                  </a>
+                  <p class="text-sm leading-relaxed text-gray-400 font-normal">
+                      Tu refugio en el corazón de Chiloé. Conecta con la naturaleza y vive experiencias inolvidables.
+                  </p>
+              </div>
 
-            <div>
-                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Navegación</h3>
-                <ul class="space-y-3 text-sm font-normal">
-                    <li><a href="index.html" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
-                    <li><a href="Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
-                    <li><a href="guias.html" class="hover:text-yellow-400 transition-colors">Guías</a></li>
-                    <li><a href="alojamientos.html" class="hover:text-yellow-400 transition-colors">Alojamiento</a></li>
-                    <li><a href="contacto.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
-                </ul>
-            </div>
+              <div>
+                  <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Navegación</h3>
+                  <ul class="space-y-3 text-sm font-normal">
+                      <li><a href="index.html" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
+                      <li><a href="Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
+                      <li><a href="guias.html" class="hover:text-yellow-400 transition-colors">Guías</a></li>
+                      <li><a href="alojamientos.html" class="hover:text-yellow-400 transition-colors">Alojamiento</a></li>
+                      <li><a href="contacto.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
+                  </ul>
+              </div>
 
-            <div>
-                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Contacto</h3>
-                <ul class="space-y-3 text-sm font-normal">
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-envelope text-yellow-400 w-4 pt-1"></i>
-                        <a href="mailto:reservas.tdb@gmail.com" class="hover:text-yellow-400 transition-colors">reservas.tdb@gmail.com</a>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-brands fa-whatsapp text-yellow-400 w-4 pt-1"></i>
-                        <a href="https://wa.me/56974981352" class="hover:text-yellow-400 transition-colors">+56 9 7498 1352</a>
-                    </li>
-                </ul>
-            </div>
+              <div>
+                  <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Contacto</h3>
+                  <ul class="space-y-3 text-sm font-normal">
+                      <li class="flex items-start gap-3">
+                          <i class="fa-solid fa-envelope text-yellow-400 w-4 pt-1"></i>
+                          <a href="mailto:reservas.tdb@gmail.com" class="hover:text-yellow-400 transition-colors">reservas.tdb@gmail.com</a>
+                      </li>
+                      <li class="flex items-start gap-3">
+                          <i class="fa-brands fa-whatsapp text-yellow-400 w-4 pt-1"></i>
+                          <a href="https://wa.me/56974981352" class="hover:text-yellow-400 transition-colors">+56 9 7498 1352</a>
+                      </li>
+                  </ul>
+              </div>
 
-            <div>
-                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Síguenos</h3>
-                <div class="flex gap-5 text-2xl">
-                    <a href="#" aria-label="Síguenos en Facebook" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Síguenos en Instagram" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="Síguenos en YouTube" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+              <div>
+                  <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Síguenos</h3>
+                  <div class="flex gap-5 text-2xl">
+                      <a href="#" aria-label="Síguenos en Facebook" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" aria-label="Síguenos en Instagram" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#" aria-label="Síguenos en YouTube" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
     
-    <div class="bg-green-950">
-        <div class="max-w-7xl mx-auto px-6 py-4 text-center">
-            <p class="text-sm text-gray-400 font-normal">
-                &copy; 2025 Turismo del Bosque. Todos los derechos reservados.
-            </p>
-        </div>
-    </div>
-</footer>
+      <div class="bg-green-950">
+          <div class="max-w-7xl mx-auto px-6 py-4 text-center">
+              <p class="text-sm text-gray-400 font-normal">
+                  &copy; 2025 Turismo del Bosque. Todos los derechos reservados.
+              </p>
+          </div>
+      </div>
+  </footer>
 
+<!--WhatsApp-->
 <a href="https://wa.me/56945408883" 
    target="_blank" 
    aria-label="Contactar por WhatsApp"

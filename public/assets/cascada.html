@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/output.css"> 
     <link rel="icon" href="img/TDB.LOGO.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
         .thumbnail-active { border-color: #22c55e; opacity: 1; }
         @keyframes fadeIn {
@@ -20,6 +21,8 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-semibold">
+
+ <!-- Header-->
 
   <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
@@ -111,7 +114,8 @@
                 </div>
             </div>
 
-            <div class="mt-20 border-t pt-12">
+<!-- recomendaciones-->
+  <div class="mt-20 border-t pt-12">
     <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Recomendaciones Prácticas</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         
@@ -135,6 +139,8 @@
         
     </div>
 </div>
+
+  <!-- relacionados-->
 
 <div class="mt-20 border-t pt-12">
     <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Cerca de Aquí</h2>
@@ -240,11 +246,30 @@
     </div>
 </footer>
 
+<!--WhatsApp-->
+<a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+</a>
+
+
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // --- Lógica del Menú Móvil ---
-            // (Pega aquí el script del menú que ya tienes)
+             // ---  Menu Movil ---
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = menuBtn.querySelector('i');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+                menuIcon.classList.toggle('fa-bars', isExpanded);
+                menuIcon.classList.toggle('fa-xmark', !isExpanded);
+            });
 
             // --- Lógica de la Galería de Imágenes ---
             const mainImage = document.getElementById('main-image');

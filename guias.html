@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     
     <style>
-    /* ... tus otros estilos ... */
+    /* ... Animacion port*/
 
     @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
@@ -32,6 +32,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-normal">
 
+<!-- Header-->
     <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
             <a href="index.html" class="flex items-center gap-3 text-xl font-bold">
@@ -57,9 +58,10 @@
             </nav>
         </div>
     </header>
-
+ 
     <main class="pt-20">
         
+    <!--Portada -->
      <section class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
       <div class="absolute inset-0">
         <img src="public/assets/img/chile-chiloe.jpg" alt="Paisaje de Chiloé" class="absolute inset-0 w-full h-full object-cover ken-burns">
@@ -74,7 +76,8 @@
         </p>
       </div>
      </section>
-
+ 
+    <!-- Guia Destacada-->
         <section class="py-20 bg-white">
             <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="rounded-2xl shadow-xl overflow-hidden">
@@ -93,7 +96,7 @@
             </div>
         </section>
 
- <!-- Consejos eco-amigables -->
+ <!-- Consejos eco -->
 
     <section id="eco" class="py-16 bg-green-50">
        <div class="max-w-7xl mx-auto px-6">
@@ -197,6 +200,7 @@
             </div>
         </section>
 
+ <!-- Consejos Practicos -->
         <section class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-12">
@@ -222,7 +226,7 @@
                 </div>
             </div>
         </section>
-
+ <!--  futer-->
         <section class="relative py-24 bg-cover bg-center" style="background-image: url('public/assets/img/DOM1-4.jpeg');">
             <div class="absolute inset-0 bg-green-900/70"></div>
             <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
@@ -241,8 +245,16 @@
     </main>
 
     <footer class="bg-green-900 text-gray-300">
-        </footer>
+ </footer>
 
+
+ <!--WhatsApp-->
+<a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+</a>
     <script>
         // --- SCRIPT DEL MENÚ MÓVIL ---
         const menuBtn = document.getElementById('menu-btn');

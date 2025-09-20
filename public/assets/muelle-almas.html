@@ -22,6 +22,8 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-semibold">
 
+<!-- Header-->
+
   <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
         <a href="../../index.html" class="flex items-center gap-3 text-xl font-bold">
@@ -59,7 +61,7 @@
                     <span class="mx-2">/</span>
                     <span class="font-semibold text-gray-700">Muelle de las Almas</span>
                 </nav>
-                <a href="../../guias.htmlr" class="flex items-center text-gray-600 hover:text-gray-900 font-semibold">
+                <a href="../../guias.html" class="flex items-center text-gray-600 hover:text-gray-900 font-semibold">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
                     Volver
                 </a>
@@ -112,6 +114,7 @@
                 </div>
             </div>
 
+      <!-- recomendaciones-->
     <div class="mt-20 border-t pt-12">
     <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Recomendaciones Prácticas</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -137,28 +140,30 @@
     </div>
 </div>
 
-<div class="mt-20 border-t pt-12">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Cerca de Aquí</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- relacionados-->
+
+  <div class="mt-20 border-t pt-12">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Cerca de Aquí</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <a href="cascada.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
-            <img src="../../public/assets/img/Cascada de Tocoihue.jpg" alt="Cascada de Tocoihue" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
-            <div class="p-6">
-                <h3 class="font-bold text-xl text-gray-800">Cascada de Tocoihue</h3>
-                <p class="text-gray-600 font-normal mt-2">Descubre una de las caídas de agua más altas de la isla.</p>
-            </div>
-        </a>
+          <a href="cascada.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
+              <img src="../../public/assets/img/Cascada de Tocoihue.jpg" alt="Cascada de Tocoihue" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+              <div class="p-6">
+                  <h3 class="font-bold text-xl text-gray-800">Cascada de Tocoihue</h3>
+                  <p class="text-gray-600 font-normal mt-2">Descubre una de las caídas de agua más altas de la isla.</p>
+              </div>
+          </a>
         
-        <a href="cole-cole.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
-            <img src="../../public/assets/img/Cole Cole.jpg" alt="Sendero a Playa Cole-Cole" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
-            <div class="p-6">
-                <h3 class="font-bold text-xl text-gray-800">Sendero a Cole-Cole</h3>
-                <p class="text-gray-600 font-normal mt-2">Una caminata desafiante hacia una playa virgen inolvidable.</p>
-            </div>
-        </a>
+          <a href="cole-cole.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
+              <img src="../../public/assets/img/Cole Cole.jpg" alt="Sendero a Playa Cole-Cole" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+              <div class="p-6">
+                  <h3 class="font-bold text-xl text-gray-800">Sendero a Cole-Cole</h3>
+                  <p class="text-gray-600 font-normal mt-2">Una caminata desafiante hacia una playa virgen inolvidable.</p>
+              </div>
+          </a>
         
-    </div>
-</div>
+      </div>
+  </div>
 
 
 
@@ -244,11 +249,29 @@
     </div>
 </footer>
 
+<!--WhatsApp-->
+<a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+</a>
+
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // --- Lógica del Menú Móvil ---
-            // (Pega aquí el script del menú que ya tienes)
+            // ---  Menu Movil ---
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = menuBtn.querySelector('i');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+                menuIcon.classList.toggle('fa-bars', isExpanded);
+                menuIcon.classList.toggle('fa-xmark', !isExpanded);
+            });
 
             // --- Lógica de la Galería de Imágenes ---
             const mainImage = document.getElementById('main-image');
