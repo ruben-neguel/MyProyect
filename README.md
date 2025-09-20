@@ -27,4 +27,4 @@ Configuración del archivo input.css
 
 5. Enlazar en index.html
 
-<link rel="stylesheet" href="public/assets/css/output.css">
+"link rel="stylesheet" href="public/assets/css/output.css"
