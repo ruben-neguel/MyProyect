@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muelle de las Almas - Turismo del Bosque</title>
+    <meta name="description" content="Guía para visitar el icónico Muelle de las Almas en Chiloé, un lugar donde la mitología, el arte y la naturaleza se encuentran.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/output.css"> 
+    <link rel="icon" href="../assets/img/TDB.LOGO.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .thumbnail-active { border-color: #22c55e; opacity: 1; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-semibold">
+
+<!-- Header-->
+
+  <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+        <a href="../index.html" class="flex items-center gap-3 text-xl font-bold">
+            <img src="../../public/assets/img/TDB.LOGO.png" class="h-12 rounded-full" alt="Logo">
+            <span>Turismo del Bosque</span>
+        </a>
+        <nav id="main-nav" class="hidden md:flex items-center gap-6 font-medium text-lg">
+            <a href="../index.html" class="py-2 hover:text-yellow-400">Inicio</a>
+            <a href="../Nosotros.html" class="py-2 hover:text-yellow-400">Nosotros</a>
+            <a href="../guias.html" class="py-2 hover:text-yellow-400">Guías</a>
+            <a href="../alojamientos.html" class="py-2 hover:text-yellow-400">Alojamiento</a>
+            <a href="../contacto.html" class="py-2 hover:text-yellow-400">Contacto</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-2xl" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-green-800">
+        <nav class="flex flex-col px-6 py-4">
+            <a href="../index.html" class="py-2 text-lg hover:text-yellow-400">Inicio</a>
+            <a href="../Nosotros.html" class="py-2 text-lg hover:text-yellow-400">Nosotros</a>
+            <a href="../guias.html" class="py-2 text-lg hover:text-yellow-400">Guías</a>
+            <a href="../alojamientos.html" class="py-2 text-lg hover:text-yellow-400">Alojamiento</a>
+            <a href="../contacto.html" class="py-2 text-lg hover:text-yellow-400">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+    <main class="pt-24">
+        <div class="max-w-5xl mx-auto py-12 px-6">
+            
+             <div class="mb-8">
+                <a href="../guias.html" class="flex items-center text-gray-600 hover:text-gray-900 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+                    Volver a Guías
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                
+                <div class="lg:col-span-2 animate-fade-in">
+                    <h1 class="text-4xl font-bold text-gray-800">Muelle de las Almas</h1>
+                    <p class="text-lg text-gray-500 mt-2">Un viaje entre la mitología y el Océano Pacífico.</p>
+                    <div class="text-gray-700 mt-6 leading-relaxed space-y-4">
+                        <p>
+                            El Muelle de las Almas es una impresionante escultura de Marcelo Orellana Rivera, inspirada en la leyenda chilota del barquero Tempilcahue, quien transportaba las almas de los muertos al más allá.
+                        </p>
+                        <p>
+                            Para llegar, se realiza una caminata sobre los acantilados de Punta Pirulil, ofreciendo vistas espectaculares del océano. El sendero, de dificultad moderada, culmina en esta obra de arte que se funde con el paisaje, creando un espacio para la contemplación y la fotografía.
+                        </p>
+                    </div>
+                    <div class="mt-8 border-t pt-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Datos del Sendero</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-route text-green-500 w-6 mr-3"></i> <b>Dificultad:</b> Fácil - Media</li>
+                            <li class="flex items-center"><i class="fas fa-clock text-green-500 w-6 mr-3"></i> <b>Duración:</b>45 - 60 min (ida)</li>
+                            <li class="flex items-center"><i class="fas fa-image text-green-500 w-6 mr-3"></i> <b>Ideal para:</b> Vistas y fotografía</li>
+                            <li class="flex items-center"><i class="fas fa-ticket-alt text-green-500 w-6 mr-3"></i> <b>Entrada:</b> Se requiere pago (propiedad privada)</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#mapa" class="w-full block text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300 text-lg">
+                            Ver Ubicación en Mapa
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <a id="main-image-link" href="../assets/img/Muelle de las almas.jpg" class="glightbox" data-gallery="muelle-gallery">
+                        <img id="main-image" src="../assets/img/Muelle de las almas.jpg" alt="Vista principal del Muelle de las Almas" class="w-full h-96 object-cover rounded-2xl shadow-lg mb-4 cursor-pointer transition-all duration-300">
+                    </a>
+                    <div class="grid grid-cols-4 gap-2" id="thumbnail-container">
+                        <a href="../assets/img/Muelle de las almas.jpg" class="glightbox hidden" data-gallery="muelle-gallery"></a>
+                        <a href="../assets/img/MLM.1.jpg" class="glightbox hidden" data-gallery="muelle-gallery"></a>
+                        <a href="../assets/img/MLM.2.jpg" class="glightbox hidden" data-gallery="muelle-gallery"></a>
+                        <a href="../assets/img/MLM.4.jpg" class="glightbox hidden" data-gallery="muelle-gallery"></a>
+                        
+                        <img src="../assets/img/Muelle de las almas.jpg" alt="Miniatura 1" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 transition-all thumbnail-active">
+                        <img src="../assets/img/MLM.1.jpg" alt="Acantilados cercanos" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                        <img src="../assets/img/MLM.2.jpg" alt="Vista panorámica del sendero" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                        <img src="../assets/img/MLM.4.jpg" alt="Atardecer en el Muelle" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                    </div>
+                </div>
+            </div>
+
+      <!-- recomendaciones-->
+    <div class="mt-20 border-t pt-12">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Recomendaciones Prácticas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-shoe-prints text-3xl text-green-600 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">Calzado Adecuado</h3>
+            <p class="text-gray-600 mt-2 font-normal">El sendero puede tener barro, especialmente si ha llovido. Usa zapatos de trekking o calzado firme y cómodo.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-cloud-sun-rain text-3xl text-blue-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">Consulta el Clima</h3>
+            <p class="text-gray-600 mt-2 font-normal">El tiempo en Chiloé cambia rápido. Revisa el pronóstico y prepárate para el viento y posibles lluvias, incluso en verano.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <i class="fas fa-bottle-water text-3xl text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-800">Agua y Snacks</h3>
+            <p class="text-gray-600 mt-2 font-normal">No hay tiendas en el lugar. Asegúrate de llevar suficiente agua y algo para comer y reponer energías.</p>
+        </div>
+        
+    </div>
+</div>
+
+  <!-- relacionados-->
+
+  <div class="mt-20 border-t pt-12">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Cerca de Aquí</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+          <a href="cascada.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
+              <img src="../../public/assets/img/Cascada de Tocoihue.jpg" alt="Cascada de Tocoihue" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+              <div class="p-6">
+                  <h3 class="font-bold text-xl text-gray-800">Cascada de Tocoihue</h3>
+                  <p class="text-gray-600 font-normal mt-2">Descubre una de las caídas de agua más altas de la isla.</p>
+              </div>
+          </a>
+        
+          <a href="cole-cole.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
+              <img src="../../public/assets/img/Cole Cole.jpg" alt="Sendero a Playa Cole-Cole" class="w-full h-64 object-cover group-hover:scale-105 transition-transform">
+              <div class="p-6">
+                  <h3 class="font-bold text-xl text-gray-800">Sendero a Cole-Cole</h3>
+                  <p class="text-gray-600 font-normal mt-2">Una caminata desafiante hacia una playa virgen inolvidable.</p>
+              </div>
+          </a>
+        
+      </div>
+  </div>
+
+
+
+    <!--Mapa-->
+            <div id="mapa" class="mt-20 border-t pt-12">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Ubicación y Acceso</h2>
+                <div class="w-full h-[400px] mb-6 shadow-lg rounded-lg overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.5609278809006!2d-74.15861662386166!3d-42.71377992964326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x962180e5a77b1503%3A0x290310e9e25a6604!2sMuelle%20de%20las%20Almas!5e1!3m2!1ses-419!2scl!4v1758058873471!5m2!1ses-419!2scl" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="text-center">
+                    <a href="https://www.google.com/maps/dir/-41.877504,-73.80992/Muelle+de+las+Almas/@-42.2914793,-74.5888153,166050m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x962180e5a77b1503:0x290310e9e25a6604!2m2!1d-74.1560417!2d-42.7137839?entry=ttu&g_ep=EgoyMDI1MDkxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="bg-green-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors">
+                        Abrir en Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!--Footeer-->
+    <footer class="bg-green-900 text-gray-300 border-t border-green-800">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <div class="sm:col-span-2 lg:col-span-1">
+                <a href="../../index.html" class="flex items-center gap-3 mb-4 group">
+                    <img src="../../public/assets/img/TDB.LOGO.png" alt="Logo Turismo del Bosque" class="w-14 h-14 rounded-full group-hover:opacity-90 transition-opacity">
+                    <span class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">Turismo del Bosque</span>
+                </a>
+                <p class="text-sm leading-relaxed text-gray-400 font-normal">
+                    Tu refugio en el corazón de Chiloé. Conecta con la naturaleza y vive experiencias inolvidables.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Navegación</h3>
+                <ul class="space-y-3 text-sm font-normal">
+                    <li><a href="../index.html" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
+                    <li><a href="../Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
+                    <li><a href="../guias.html" class="hover:text-yellow-400 transition-colors">Guías</a></li>
+                    <li><a href="../alojamientos.html" class="hover:text-yellow-400 transition-colors">Alojamiento</a></li>
+                    <li><a href="../contacto.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Contacto</h3>
+                <ul class="space-y-3 text-sm font-normal">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope text-yellow-400 w-4 pt-1"></i>
+                        <a href="mailto:reservas.tdb@gmail.com" class="hover:text-yellow-400 transition-colors">reservas.tdb@gmail.com</a>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-brands fa-whatsapp text-yellow-400 w-4 pt-1"></i>
+                        <a href="https://wa.me/56974981352" class="hover:text-yellow-400 transition-colors">+56 9 7498 1352</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Síguenos</h3>
+                <div class="flex gap-5 text-2xl">
+                    <a href="#" aria-label="Síguenos en Facebook" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en YouTube" class="text-gray-400 hover:text-yellow-400 transform hover:scale-110 transition-all"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-950">
+        <div class="max-w-7xl mx-auto px-6 py-4 text-center">
+            <p class="text-sm text-gray-400 font-normal">
+                &copy; 2025 Turismo del Bosque. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!--WhatsApp-->
+<a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ---  Menu Movil ---
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = menuBtn.querySelector('i');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+                menuIcon.classList.toggle('fa-bars', isExpanded);
+                menuIcon.classList.toggle('fa-xmark', !isExpanded);
+            });
+
+            // --- Lógica de la Galería de Imágenes ---
+            const mainImage = document.getElementById('main-image');
+            const mainImageLink = document.getElementById('main-image-link');
+            const thumbnails = document.querySelectorAll('.thumbnail-img');
+            if (mainImage && mainImageLink && thumbnails.length > 0) {
+                thumbnails.forEach(thumb => {
+                    thumb.addEventListener('click', function() {
+                        const newImageSrc = this.src;
+                        mainImage.src = newImageSrc;
+                        mainImageLink.href = newImageSrc;
+                        thumbnails.forEach(t => t.classList.remove('thumbnail-active'));
+                        this.classList.add('thumbnail-active');
+                    });
+                });
+            }
+
+            // --- Inicializar el Lightbox ---
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                gallery: 'muelle-gallery'
+            });
+        });
+    </script>
+</body>
+</html>

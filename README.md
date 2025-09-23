@@ -3,7 +3,7 @@
 Sitio web para un emprendimiento turístico en Chiloé.
 
 ### Tecnologías Utilizadas
-HTML5,  Tailwind CSS, JavaScript, Font Awesome, GLightbox.
+HTML5, CSS, Tailwind CSS, JavaScript, Font Awesome, GLightbox.
 
 ## Instalación y Configuración de Tailwind CSS
 

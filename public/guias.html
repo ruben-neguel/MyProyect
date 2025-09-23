@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías y Aventuras - Turismo del Bosque</title>
+    <meta name="description" content="Guías, consejos y un vistazo a nuestros refugios en Chiloé. Descubre qué visitar y dónde alojarte para una experiencia inolvidable.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="icon" href="assets/img/TDB.LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <style>
+           /* ... animacion */
+        .card:hover { transform: translateY(-5px); transition: all 0.3s ease-in-out; }
+        .nav-active { color: #facc15; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+        .ken-burns { animation: kenburns 15s ease-out forwards; }
+        @keyframes kenburns {
+            from { transform: scale(1.1); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-normal">
+ 
+    <!-- Header-->
+    <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+            <a href="index.html" class="flex items-center gap-3 text-xl font-bold">
+                <img src="assets/img/TDB.LOGO.png" class="h-12 rounded-full" alt="Logo">
+                <span>Turismo del Bosque</span>
+            </a>
+            <nav id="main-nav" class="hidden md:flex items-center gap-6 font-medium text-lg">
+                <a href="index.html" class="py-2 hover:text-yellow-400">Inicio</a>
+                <a href="Nosotros.html" class="py-2 hover:text-yellow-400">Nosotros</a>
+                <a href="guias.html" class="py-2 nav-active">Guías</a>
+                <a href="alojamientos.html" class="py-2 hover:text-yellow-400">Alojamiento</a>
+                <a href="contacto.html" class="py-2 hover:text-yellow-400">Contacto</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-2xl" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800">
+            <nav class="flex flex-col px-6 py-4">
+                <a href="index.html" class="py-2 text-lg hover:text-yellow-400">Inicio</a>
+                <a href="Nosotros.html" class="py-2 text-lg hover:text-yellow-400">Nosotros</a>
+                <a href="guias.html" class="py-2 text-lg nav-active">Guías</a>
+                <a href="alojamientos.html" class="py-2 text-lg hover:text-yellow-400">Alojamiento</a>
+                <a href="contacto.html" class="py-2 text-lg hover:text-yellow-400">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--GUÍA DESTACADA-->
+
+    <main class="pt-20">
+        
+        <section class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="assets/img/chile-chiloe.jpg" alt="Paisaje de Chiloé" class="absolute inset-0 w-full h-full object-cover ken-burns">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="relative z-10 p-6 animate-fade-in-up">
+                <h1 class="text-5xl md:text-6xl font-bold" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">Nuestras Guías y Aventuras</h1>
+                <p class="text-xl md:text-2xl mt-4" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">Todo lo que necesitas para planificar un viaje inolvidable.</p>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl shadow-xl overflow-hidden">
+                    <img src="assets/img/Muelle de las almas.jpg" alt="Muelle de las Almas" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
+                <div>
+                    <p class="font-bold text-yellow-500 tracking-widest uppercase">GUÍA DESTACADA</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Muelle de las Almas</h2>
+                    <p class="text-lg text-gray-600 mt-4 leading-relaxed">Un viaje a la mitología chilota. Descubre la historia, cómo llegar y los secretos de este icónico destino en una caminata por acantilados que te dejará sin aliento.</p>
+                    <a href="Guias/muelle-almas.html" class="mt-6 inline-block bg-green-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 shadow-md transition-all transform hover:-translate-y-1">
+                        Leer Guía Completa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+         <!-- relacionados-->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900">Últimas Entradas</h2>
+                    <p class="text-xl text-slate-500 mt-4 max-w-2xl mx-auto">Desde cascadas escondidas hasta nuestros refugios más acogedores. Aquí tienes más historias para inspirar tu próxima aventura.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <a href="Guias/cascada.html" class="bg-white rounded-2xl shadow-xl overflow-hidden group card flex flex-col">
+                        <div class="overflow-hidden h-56"><img src="assets/img/Cascada de Tocoihue.jpg" alt="Cascada de Tocoihue entre la vegetación" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm text-indigo-700 font-bold">GUÍA DE VIAJE</span>
+                            <h3 class="font-bold text-2xl mt-2 text-slate-900">El Rugido Oculto: Cascada de Tocoihue</h3>
+                            <p class="text-slate-600 mt-3 flex-grow">Un sendero corto que te recompensa con el estruendo de una de las caídas de agua más imponentes de la isla.</p>
+                            <span class="mt-4 text-green-700 font-semibold group-hover:text-yellow-600">Leer más...</span>
+                        </div>
+                    </a>
+                    
+                    <a href="Guias/DetalleCab1.html" class="bg-white rounded-2xl shadow-xl overflow-hidden group card flex flex-col">
+                        <div class="relative h-56"><span class="absolute top-4 right-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full z-10 font-bold">CON HOT TUB</span><img src="assets/img/Cabaña 3 Hot Tub (7 personas).jpg" alt="Cabaña con hot tub en el bosque" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm text-pink-700 font-bold">NUESTROS REFUGIOS</span>
+                            <h3 class="font-bold text-2xl mt-2 text-slate-900">Cabaña 1: Inmersión en el Bosque</h3>
+                            <p class="text-slate-600 mt-3 flex-grow">Despierta con el sonido de los pájaros y termina el día bajo las estrellas en tu propio hot tub privado.</p>
+                            <span class="mt-4 text-green-700 font-semibold group-hover:text-yellow-600">Ver detalles...</span>
+                        </div>
+                    </a>
+
+                    <a href="Guias/cole-cole.html" class="bg-white rounded-2xl shadow-xl overflow-hidden group card flex flex-col">
+                        <div class="overflow-hidden h-56"><img src="assets/img/Cole Cole.jpg" alt="Playa Cole-Cole con sus arenas blancas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm text-indigo-700 font-bold">GUÍA DE VIAJE</span>
+                            <h3 class="font-bold text-2xl mt-2 text-slate-900">El Secreto Mejor Guardado: Playa Cole-Cole</h3>
+                            <p class="text-slate-600 mt-3 flex-grow">Una caminata desafiante a través del Parque Nacional Chiloé que culmina en una playa virgen de belleza sobrecogedora.</p>
+                            <span class="mt-4 text-green-700 font-semibold group-hover:text-yellow-600">Leer más...</span>
+                        </div>
+                    </a>
+                    
+                    <a href="Guias/DetalleAvell.html" class="bg-white rounded-2xl shadow-xl overflow-hidden group card flex flex-col">
+                        <div class="relative h-56"><span class="absolute top-4 right-4 bg-rose-500 text-white text-xs px-3 py-1 rounded-full z-10 font-bold">PARA PAREJAS</span><img src="assets/img/Cabaña Avellano (2 personas).jpg" alt="Acogedora cabaña para parejas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm text-pink-700 font-bold">NUESTROS REFUGIOS</span>
+                            <h3 class="font-bold text-2xl mt-2 text-slate-900">Refugio Avellano: Nido para Dos</h3>
+                            <p class="text-slate-600 mt-3 flex-grow">Diseñado para la intimidad y el confort, es el escondite perfecto para una escapada romántica en plena naturaleza.</p>
+                            <span class="mt-4 text-green-700 font-semibold group-hover:text-yellow-600">Ver detalles...</span>
+                        </div>
+                    </a>
+
+                    <a href="Guias/tepual.html" class="bg-white rounded-2xl shadow-xl overflow-hidden group card flex flex-col">
+                        <div class="overflow-hidden h-56"><img src="assets/img/Sendero el tepueal.jpg" alt="Sendero El Tepual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm text-indigo-700 font-bold">GUÍA DE VIAJE</span>
+                            <h3 class="font-bold text-2xl mt-2 text-slate-900">Sendero El Tepual: Magia Ancestral</h3>
+                            <p class="text-slate-600 mt-3 flex-grow">Un camino de pasarelas que se interna en un bosque siempre verde, un ecosistema único y frágil.</p>
+                            <span class="mt-4 text-green-700 font-semibold group-hover:text-yellow-600">Leer más...</span>
+                        </div>
+                    </a>
+                    
+                    <a href="Guias/DetalleDom1.html" class="bg-white rounded-2xl shadow-xl overflow-hidden group card flex flex-col">
+                        <div class="relative h-56"><span class="absolute top-4 right-4 bg-teal-600 text-white text-xs px-3 py-1 rounded-full z-10 font-bold">DOMO GEODÉSICO</span><img src="assets/img/Domo 1 (6-7 personas).jpg" alt="Domo geodésico con vista al bosque" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span class="text-sm text-pink-700 font-bold">NUESTROS REFUGIOS</span>
+                            <h3 class="font-bold text-2xl mt-2 text-slate-900">Domo Astral: Duerme bajo las Estrellas</h3>
+                            <p class="text-slate-600 mt-3 flex-grow">Una experiencia única que combina la comodidad de una cabaña con una conexión directa con el cielo nocturno de Chiloé.</p>
+                            <span class="mt-4 text-green-700 font-semibold group-hover:text-yellow-600">Ver detalles...</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Consejos Prácticos del Viajero</h2>
+                    <p class="text-lg text-gray-500 mt-2">Prepárate para sacar el máximo provecho de tu visita a la isla.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-gray-50 p-8 rounded-xl">
+                        <i class="fas fa-cloud-sun-rain text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Vístete para 4 estaciones</h3>
+                        <p class="mt-2">El clima en Chiloé es impredecible. Trae capas de ropa, un buen impermeable y zapatos cómodos para la lluvia y el barro.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl">
+                        <i class="fas fa-utensils text-4xl text-orange-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Prueba la gastronomía local</h3>
+                        <p class="mt-2">No te vayas sin probar el curanto al hoyo, los milcaos y el chapalele. Busca las "picadas" locales para una experiencia auténtica.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl">
+                        <i class="fas fa-car text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Considera arrendar un auto</h3>
+                        <p class="mt-2">Para explorar los rincones más escondidos de la isla con libertad, arrendar un vehículo 4x4 es la mejor opción.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative py-24 bg-cover bg-center" style="background-image: url('assets/img/DOM1-4.jpeg');">
+            <div class="absolute inset-0 bg-green-900/70"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+                <h2 class="text-4xl font-bold">¿Listo para Comenzar tu Aventura?</h2>
+                <p class="text-lg mt-4">Explora nuestros refugios o contáctanos directamente para planificar tu estadía soñada en Chiloé.</p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="alojamientos.html" class="bg-yellow-400 text-green-900 px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-300 shadow-lg transform hover:-translate-y-1 transition-all">
+                        Ver Alojamientos
+                    </a>
+                    <a href="contacto.html" class="bg-white/20 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white/30 shadow-lg transition-all">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--WhatsApp-->
+<a href="https://wa.me/56945408883" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300">
+    <i class="fa-brands fa-whatsapp text-4xl"></i>
+</a>
+    
+    <script>
+        // --- SCRIPT DEL MENÚ MÓVIL ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuBtn.querySelector('i');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            menuIcon.classList.toggle('fa-bars', isExpanded);
+            menuIcon.classList.toggle('fa-xmark', !isExpanded);
+        });
+    </script>
+</body>
+</html>

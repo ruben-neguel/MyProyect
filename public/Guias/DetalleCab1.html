@@ -3,60 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domo 3 (4 personas) - Turismo del Bosque</title>
-    <meta name="description" content="Acogedor Domo de madera para 4 personas, con cúpula y ventanas triangulares para disfrutar de una bella vista al entorno y al cielo de Chiloé.">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cabaña 1 con Hot Tub (7 personas) - Turismo del Bosque</title>
+    <meta name="description" content="Amplia cabaña para 7 personas con Hot Tub privado de madera en la terraza, 3 dormitorios y una hermosa vista al mar interior de Chiloé.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link rel="stylesheet" href="../../public/assets/css/output.css"> 
-    <link rel="icon" href="../../public/assets/img/TDB.LOGO.png">
+    
+    <link rel="stylesheet" href="css/output.css"> 
+    <link rel="icon" href="img/TDB.LOGO.png">
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .thumbnail-active { border-color: #166534; opacity: 1; } 
+        .thumbnail-active { border-color: #22c55e; opacity: 1; }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
-        .card:hover { transform: translateY(-5px); transition: all 0.3s ease-in-out; }
-        .nav-active { color: #facc15; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-normal">
-    
-<!-- Header-->
-
+<body class="bg-gray-50 text-gray-800 font-semibold">
+ <!-- Header-->
    <header class="bg-green-900 text-white fixed top-0 w-full shadow-lg z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-        <a href="../../index.html" class="flex items-center gap-3 text-xl font-bold">
+        <a href="../index.html" class="flex items-center gap-3 text-xl font-bold">
             <img src="../../public/assets/img/TDB.LOGO.png" class="h-12 rounded-full" alt="Logo">
             <span>Turismo del Bosque</span>
         </a>
         <nav id="main-nav" class="hidden md:flex items-center gap-6 font-medium text-lg">
-            <a href="../../index.html" class="py-2 hover:text-yellow-400">Inicio</a>
-            <a href="../../Nosotros.html" class="py-2 hover:text-yellow-400">Nosotros</a>
-            <a href="../../guias.html" class="py-2 hover:text-yellow-400">Guías</a>
-            <a href="../../alojamientos.html" class="py-2 hover:text-yellow-400">Alojamiento</a>
-            <a href="../../contacto.html" class="py-2 hover:text-yellow-400">Contacto</a>
+            <a href="../index.html" class="py-2 hover:text-yellow-400">Inicio</a>
+            <a href="../Nosotros.html" class="py-2 hover:text-yellow-400">Nosotros</a>
+            <a href="../guias.html" class="py-2 hover:text-yellow-400">Guías</a>
+            <a href="../alojamientos.html" class="py-2 hover:text-yellow-400">Alojamiento</a>
+            <a href="../contacto.html" class="py-2 hover:text-yellow-400">Contacto</a>
         </nav>
         <button id="menu-btn" class="md:hidden text-2xl" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-green-800">
         <nav class="flex flex-col px-6 py-4">
-            <a href="../../index.html" class="py-2 text-lg hover:text-yellow-400">Inicio</a>
-            <a href="../../Nosotros.html" class="py-2 text-lg hover:text-yellow-400">Nosotros</a>
-            <a href="../../guias.html" class="py-2 text-lg hover:text-yellow-400">Guías</a>
-            <a href="../../alojamientos.html" class="py-2 text-lg hover:text-yellow-400">Alojamiento</a>
-            <a href="../../contacto.html" class="py-2 text-lg hover:text-yellow-400">Contacto</a>
+            <a href="../index.html" class="py-2 text-lg hover:text-yellow-400">Inicio</a>
+            <a href="../Nosotros.html" class="py-2 text-lg hover:text-yellow-400">Nosotros</a>
+            <a href="../guias.html" class="py-2 text-lg hover:text-yellow-400">Guías</a>
+            <a href="../alojamientos.html" class="py-2 text-lg hover:text-yellow-400">Alojamiento</a>
+            <a href="../contacto.html" class="py-2 text-lg hover:text-yellow-400">Contacto</a>
         </nav>
     </div>
 </header>
-
     <main class="pt-24">
-        <div class="max-w-6xl mx-auto py-12 px-6">
+        <div class="max-w-5xl mx-auto py-12 px-6">
             
             <div class="mb-8">
-                <a href="../../alojamientos.html" class="flex items-center text-gray-600 hover:text-gray-900 font-semibold">
+                <a href="../Alojamientos.html" class="flex items-center text-gray-600 hover:text-gray-900 font-semibold">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
                     Volver a Alojamientos
                 </a>
@@ -65,49 +64,61 @@
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
                 
                 <div class="lg:col-span-2 animate-fade-in">
-                    <h1 class="text-4xl font-bold text-gray-800">Domo 3</h1>
-                    <p class="text-lg text-gray-500 mt-2">Una experiencia única con vista al cielo estrellado.</p>
-                    <p class="text-gray-700 mt-6 leading-relaxed">
-                        Acogedor Domo de madera para 4 personas, con una cúpula con ventanas triangulares para disfrutar de una bella vista al entorno y al cielo. Es un espacio de un ambiente, con una pequeña cocina completa, cama matrimonial de 2 plazas en el primer nivel y dos camas de 1 plaza en el segundo nivel. Ideal para un matrimonio con 2 niños.
-                    </p>
+                    <h1 class="text-4xl font-bold text-gray-800">Cabaña 1 con Hot Tub</h1>
+                    <p class="text-lg text-gray-500 mt-2">La opción más completa para grupos grandes.</p>
+                    <div class="text-gray-700 mt-6 leading-relaxed space-y-4">
+                        <p>
+                           Amplia y acogedora cabaña de madera, con hermosa vista al mar interior y totalmente equipada. Cuenta con 3 dormitorios, cocina completa y 2 baños completos con tina y ducha.
+                        </p>
+                        <p>
+                           El dormitorio principal tiene cama de 2 plazas y baño en suite; el segundo, dos camas de 1.5 plazas; y el tercero, una cama de 2 plazas y otra de 1 plaza. La terraza privada incluye parrilla para asados y un relajante Hot Tub de madera.
+                        </p>
+                         <p class="font-semibold text-green-700">
+                            Todos nuestros alojamientos cuentan con calefacción a leña, WIFI, DIRECTV y estacionamiento privado.
+                        </p>
+                    </div>
                     <div class="mt-8 border-t pt-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Detalles del Alojamiento</h3>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Detalle Alojamiento</h3>
                         <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-center"><i class="fas fa-users text-green-600 w-6 mr-3"></i> <b>Personas:</b> 4</li>
-                            <li class="flex items-center"><i class="fas fa-bed text-green-600 w-6 mr-3"></i> <b>Camas:</b> 1 Matrimonial, 2 Individuales</li>
-                            <li class="flex items-center"><i class="fas fa-bath text-green-600 w-6 mr-3"></i> <b>Baños:</b> 1 completo</li>
-                            <li class="flex items-center"><i class="fas fa-campground text-green-600 w-6 mr-3"></i> <b>Terraza:</b> Sí, privada</li>
+                            <li class="flex items-center"><i class="fas fa-users text-green-500 w-6 mr-3"></i> <b>Adultos:</b> 7</li>
+                            <li class="flex items-center"><i class="fas fa-bed text-green-500 w-6 mr-3"></i> <b>Habitaciones:</b> 3</li>
+                            <li class="flex items-center"><i class="fas fa-bath text-green-500 w-6 mr-3"></i> <b>Baños:</b> 2</li>
+                            <li class="flex items-center"><i class="fas fa-hot-tub-person text-green-500 w-6 mr-3"></i> <b>Hot Tub:</b> Sí, privado</li>
+                            <li class="flex items-center"><i class="fas fa-campground text-green-500 w-6 mr-3"></i> <b>Terraza:</b> Sí, con parrilla</li>
                         </ul>
                     </div>
                     <div class="mt-8">
-                        <a href="../../contacto.html" class="w-full block text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors text-lg">
+                        <a href="../../contacto.html" class="w-full block text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors duration-300 text-lg">
                             Consultar Disponibilidad
                         </a>
                     </div>
                 </div>
 
                 <div class="lg:col-span-3">
-                    <a id="main-image-link" href="../../public/assets/img/Domo 3 (4 personas).jpeg" class="glightbox" data-gallery="domo3-gallery">
-                        <img id="main-image" src="../../public/assets/img/Domo 3 (4 personas).jpeg" alt="Vista principal del Domo 3" class="w-full h-96 object-cover rounded-2xl shadow-lg mb-4 cursor-pointer">
+                    <a id="main-image-link" href="../assets/img/Cabaña 3 Hot Tub (7 personas).jpg" class="glightbox" data-gallery="cabana3-gallery">
+                        <img id="main-image" src="../assets/img/Cabaña 3 Hot Tub (7 personas).jpg" alt="Vista principal de la Cabaña 3 con Hot Tub" class="w-full h-96 object-cover rounded-2xl shadow-lg mb-4 cursor-pointer transition-all duration-300">
                     </a>
                     <div class="grid grid-cols-4 gap-2" id="thumbnail-container">
-                        <a href="../../public/assets/img/DOM3-1.jpeg" class="glightbox hidden" data-gallery="domo3-gallery"></a>
-                        <a href="../../public/assets/img/DOM3-2.jpeg" class="glightbox hidden" data-gallery="domo3-gallery"></a>
-                        <a href="../../public/assets/img/DOM3-4.jpeg" class="glightbox hidden" data-gallery="domo3-gallery"></a>
-                        <a href="../../public/assets/img/DOM3-3.jpeg" class="glightbox hidden" data-gallery="domo3-gallery"></a>
+                        <a href="../assets/img/C1-1.jpg" class="glightbox hidden" data-gallery="cabana3-gallery"></a>
+                        <a href="../assets/img/C1-2.jpg" class="glightbox hidden" data-gallery="cabana3-gallery"></a>
+                        <a href="../assets/img/C1-3.jpg" class="glightbox hidden" data-gallery="cabana3-gallery"></a>
+                        <a href="../assets/img/C1-4.jpg" class="glightbox hidden" data-gallery="cabana3-gallery"></a>
+                        <a href="../assets/img/C1-5.jpg" class="glightbox hidden" data-gallery="cabana3-gallery"></a>
                         
-                        <img src="../../public/assets/img/DOM3-1.jpeg" alt="Miniatura 1" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 transition-all thumbnail-active">
-                        <img src="../../public/assets/img/DOM3-2.jpeg" alt="Miniatura 2" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
-                        <img src="../../public/assets/img/DOM3-4.jpeg" alt="Miniatura 3" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
-                        <img src="../../public/assets/img/DOM3-3.jpeg" alt="Miniatura 4" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                        <img src="../assets/img/C1-1.jpg" alt="Miniatura 1" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 transition-all thumbnail-active">
+                        <img src="../assets/img/C1-2.jpg" alt="Hot Tub de madera" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                        <img src="../assets/img/C1-3.jpg" alt="Interior de la Cabaña 3" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                        <img src="../assets/img/C1-4.jpg" alt="Vista desde la Cabaña 3" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
+                        <img src="../assets/img/C1-5.jpg" alt="Vista desde la Cabaña 3" class="thumbnail-img w-full h-24 object-cover rounded-lg cursor-pointer border-2 border-transparent transition-all opacity-75 hover:opacity-100">
                     </div>
                 </div>
             </div>
         </div>
-        
-  <!-- relacionados-->
+    </main>
+    
+ <!-- relacionados-->
 
-        <section class="py-20 bg-gray-100 border-t">
+     <section class="py-20 bg-gray-100 border-t">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-800">Otros Alojamientos que te Podrían Gustar</h2>
@@ -115,7 +126,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     
                     <a href="DetalleCab3.html" class="bg-white rounded-2xl shadow-lg overflow-hidden group card">
-                        <div class="relative"><span class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full z-10">Con Hot Tub</span><img src="../../public/assets/img/Cabaña 3 Hot Tub (7 personas).jpg" alt="Cabaña 3" class="w-full h-56 object-cover group-hover:scale-105 transition-transform"></div>
+                        <div class="relative"><span class="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full z-10">Con Hot Tub</span><img src="../../public/assets/img/C3.1.jpg" alt="Cabaña 3" class="w-full h-56 object-cover group-hover:scale-105 transition-transform"></div>
                         <div class="p-5">
                             <h3 class="font-bold text-xl">Cabaña 3</h3>
                             <p class="text-gray-500 mt-2 font-normal">Hasta 7 personas</p>
@@ -148,7 +159,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
             <div class="sm:col-span-2 lg:col-span-1">
-                <a href="../../index.html" class="flex items-center gap-3 mb-4 group">
+                <a href=".../index.html" class="flex items-center gap-3 mb-4 group">
                     <img src="../../public/assets/img/TDB.LOGO.png" alt="Logo Turismo del Bosque" class="w-14 h-14 rounded-full group-hover:opacity-90 transition-opacity">
                     <span class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">Turismo del Bosque</span>
                 </a>
@@ -160,11 +171,11 @@
             <div>
                 <h3 class="text-lg font-semibold text-white mb-4 border-b border-green-800 pb-2">Navegación</h3>
                 <ul class="space-y-3 text-sm font-normal">
-                    <li><a href="../../index.html" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
-                    <li><a href="../../Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
-                    <li><a href="../../guias.html" class="hover:text-yellow-400 transition-colors">Guías</a></li>
-                    <li><a href="../../alojamientos.html" class="hover:text-yellow-400 transition-colors">Alojamiento</a></li>
-                    <li><a href="../../contacto.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
+                    <li><a href=".../index.html" class="hover:text-yellow-400 transition-colors">Inicio</a></li>
+                    <li><a href="../Nosotros.html" class="hover:text-yellow-400 transition-colors">Nosotros</a></li>
+                    <li><a href="../guias.html" class="hover:text-yellow-400 transition-colors">Guías</a></li>
+                    <li><a href="../alojamientos.html" class="hover:text-yellow-400 transition-colors">Alojamiento</a></li>
+                    <li><a href="../contacto.html" class="hover:text-yellow-400 transition-colors">Contacto</a></li>
                 </ul>
             </div>
 
@@ -210,10 +221,12 @@
 </a>
 
 
+<!--Scripts-->
+
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // ---Menu Movil ---
+            // --- Lógica del Menú Móvil ---
             const menuBtn = document.getElementById('menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = menuBtn.querySelector('i');
@@ -226,7 +239,7 @@
                 menuIcon.classList.toggle('fa-xmark', !isExpanded);
             });
 
-            // ---Galeria de Imagenes ---
+            // --- Lógica de la Galería de Imágenes ---
             const mainImage = document.getElementById('main-image');
             const mainImageLink = document.getElementById('main-image-link');
             const thumbnails = document.querySelectorAll('.thumbnail-img');
@@ -247,7 +260,7 @@
                 });
             }
 
-            // ---Lightbox ---
+            // --- Inicializar el Lightbox ---
             const lightbox = GLightbox({
                 selector: '.glightbox'
             });
